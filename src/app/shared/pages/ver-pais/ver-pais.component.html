@@ -1,1 +1,17 @@
 
+<div class="row">
+  <div class="col">
+    <h3>Detalle</h3>
+
+    <ul class="row" *ngFor="let item of pais">
+      <li class="list-group-item"> <img src="{{item.flags.png}}" alt=""/></li>
+      <li class="list-group-item"><strong>Pais:</strong> {{item.name.common}}</li>
+      <li class="list-group-item"><strong>Capital:</strong> {{item.capital}}</li>
+      <li class="list-group-item"><strong>Region:</strong> {{item.region}}</li>
+      <li class="list-group-item"><strong>Poblacion:</strong> {{item.population}}</li>
+      <li class="list-group-item"><strong>Continente:</strong> {{item.continents}}</li>
+      <li class="list-group-item"><strong>Area:</strong> {{item.area}}</li>
+
+    </ul>
+  </div>
+</div>
