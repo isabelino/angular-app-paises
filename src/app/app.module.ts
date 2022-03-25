@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './rutas/app-routing.module';
 import { AppComponent } from './app.component';
+import { PagesModule } from './shared/pages/pages.module';
 import { SharedModule } from './shared/shared.module';
+import {HttpClientModule} from '@angular/common/http';
+import { PaisService } from './shared/pages/pais.service';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,11 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    PagesModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PaisService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { SiderbarComponent } from './siderbar/siderbar.component';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -18,7 +20,8 @@ import { SiderbarComponent } from './siderbar/siderbar.component';
     SiderbarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class SharedModule { }
